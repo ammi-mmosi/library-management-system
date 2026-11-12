@@ -35,6 +35,7 @@ model Book {
   title       String
   author      String
   isbn        String   @unique
+  totalCopies Int      @default(1)
   description String?
   publishedAt DateTime?
   available   Boolean  @default(true)
